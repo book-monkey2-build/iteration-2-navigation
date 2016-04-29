@@ -1,57 +1,57 @@
 CACHE MANIFEST
 # sw.bundle: ng-cli
-# sw.version: 9940b2022b73086a921c24bd44534bae57be64c7
-# sw.file.hash: 9e27270431dd0e36213a0a0d1aafbd1faa409265
+# sw.version: f637087a6671c85724d6b4260c1b31eacd495d7d
+# sw.file.hash: a859b942f1079cc34dc727265edefae5bbc52a9f
 /app.js
-# sw.file.hash: a694ddf1b9e159301ce22afb9ec5f28504524dcb
+# sw.file.hash: 44a12ccf8e84bb3c09b18e6d7244d7a808d3b0b5
 /app.js.map
 # sw.file.hash: 18375eca20879fe40c46bd0872f5a238bd1d42f3
 /app/app.ts.snippet
-# sw.file.hash: c3a69ba6804e5b65e83a2ee1379bfc807317fb91
+# sw.file.hash: b7ef0c3f9ddbb6df51ba95639ee428973d3986cf
 /app/book-details/book-details.component.js
-# sw.file.hash: ab7dd5ebf814c238a6cb1c023556f8e74204e475
+# sw.file.hash: 8835a49685725f64017a42ed27713c49cad7de3a
 /app/book-details/book-details.component.js.map
 # sw.file.hash: e099698d21a13140856059d6f3253ec0dc65b495
 /app/book-details/book-details.html
 # sw.file.hash: da67c256320fd3f9078bba545441f4ebe19aa4db
 /app/book-list-item/book-list-item.component.html
-# sw.file.hash: 5d19d65b818605e71333da53235fa35b3e11cda3
+# sw.file.hash: 76f59dd563c942db5811f5c8e7e3914f6f92f255
 /app/book-list-item/book-list-item.component.js
-# sw.file.hash: be4dbf7a0b119cd9f00e009f263265cbe49383b4
+# sw.file.hash: 59c7de8dddc754a60573b81a3a1c08aea3dfb844
 /app/book-list-item/book-list-item.component.js.map
 # sw.file.hash: dc96480d0a3f930c9db32ee9079cfcba35cec0fe
 /app/book-list/book-list.component.html
-# sw.file.hash: b8c05c09714a6f2b1153bb743a82b89f4c74e539
+# sw.file.hash: 830c7d8a46d6194f1f6237ee6aaf5824465d4e98
 /app/book-list/book-list.component.js
-# sw.file.hash: 1531695e9848f68a7619720382bc98133a0c9cf2
+# sw.file.hash: ca6ea53d3febfa2a6d16ecd9f65c9885bf943f8e
 /app/book-list/book-list.component.js.map
 # sw.file.hash: d98ed5325862b478f5c2c21ddf5c9b4f8925acbd
 /app/book-monkey.html
-# sw.file.hash: 27cc978082c9c7c9f49e5144c7b2bcc9fe39e358
+# sw.file.hash: c87791eaf959c85d418f2b922e660cf599b93616
 /app/book-monkey.js
-# sw.file.hash: 68a5b3080995c471acdfa9b5504b246e1f8357ec
+# sw.file.hash: cfd50e394f7c9a2c9d43fe06eb1fa45679a7d60f
 /app/book-monkey.js.map
-# sw.file.hash: 3df41d3d8f45836863f351093c3cabd25e6ec968
+# sw.file.hash: 16ec94bb9b6445f1cd3b75148bbf8c4cd2cc7203
 /app/books/books.component.js
-# sw.file.hash: 14a9f2faf03b749201e8084e0e9446600ba5d6ad
+# sw.file.hash: 17a25e44a6760aee18cf5b2b0340afd2264ba2b1
 /app/books/books.component.js.map
-# sw.file.hash: f294c81d0629caea277b0a073a992de7dbe53f2a
+# sw.file.hash: 0221815b10d7b7d027e812b59784c6f8f0e079bf
 /app/domain/book.js
-# sw.file.hash: 3098f00b7eac968ba6a017c7520f9d15da906d06
+# sw.file.hash: 0b3d0cd9facd3f76b4e910d968915497f4ea1434
 /app/domain/book.js.map
-# sw.file.hash: fb8f417d9e7565256d9ea3d3f8536cf69110678f
+# sw.file.hash: bdb0e6658c7d0fcb322366e4d7b24a514156d90b
 /app/domain/thumbnail.js
-# sw.file.hash: aa598f799f737d739b4f579eeec4c8ca70bf7e26
+# sw.file.hash: 08b392807603e228959df1c01d8b70d702bb1265
 /app/domain/thumbnail.js.map
-# sw.file.hash: 14825bc04696127a1d1c61adcfbbcac573d5159f
+# sw.file.hash: 9514ba97a0b4cd9af1cd98d457185d3c48d46854
 /app/home/home.component.js
-# sw.file.hash: e43c4ec397c8e273c32a3896a813eebc57b8c3b3
+# sw.file.hash: 7e695f0381efe337770a72d19955075226c422ad
 /app/home/home.component.js.map
 # sw.file.hash: 8d200d239664ae9a716e8e349d292aaec2f031f2
 /app/navigation.component.ts.snippet
-# sw.file.hash: 0f91a672b415960f89eb4a4db65af05426485461
+# sw.file.hash: fc8f3eaefa16f1455e722de657243de90861d4c2
 /app/services/books/book-store.service.js
-# sw.file.hash: 688121649c16912c7bd9b29c7fc1cc69447e871a
+# sw.file.hash: 52098d5938355b79df192587653aefc13da85439
 /app/services/books/book-store.service.js.map
 # sw.file.hash: 84161b857f5c547e3699ddfbffc6d8d737542e01
 /favicon.ico
@@ -59,7 +59,7 @@ CACHE MANIFEST
 /forkme_light_background.png
 # sw.file.hash: 7bde684db6b20be16b79b8eb16b6496b350e0547
 /index.html
-# sw.file.hash: 866e0d442ab28a3f6037bbbf3b98e84afc60d1a0
+# sw.file.hash: e5e036b749a151842a579c1f964e7e57e9abd09d
 /tsconfig.json
 # sw.file.hash: be771bd0a4170c04abff753212def2a2376a408e
 /vendor/angular2/bundles/angular2-polyfills.js
