@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -8,7 +8,7 @@ import { BookListItemComponent } from './book-list-item/book-list-item.component
 import { BookDetailsComponent } from './book-details/book-details.component';
 
 import { BookStoreService } from './shared/book-store.service';
-import { AppRoutingModule } from './app-routing.module.one-app';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import { AppRoutingModule } from './app-routing.module.one-app';
     BookDetailsComponent
   ],
   imports: [
-    CommonModule,
+    BrowserModule,
     AppRoutingModule
   ],
   providers: [
