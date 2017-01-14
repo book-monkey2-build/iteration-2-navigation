@@ -13859,7 +13859,10 @@ function advanceActivatedRoute(route) {
  * @return {?}
  */
 function equalParamsAndUrlSegments(a, b) {
-    return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__utils_collection__["g" /* shallowEqual */])(a.params, b.params) && __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__url_tree__["g" /* equalSegments */])(a.url, b.url);
+    var /** @type {?} */ equalUrlParams = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__utils_collection__["g" /* shallowEqual */])(a.params, b.params) && __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__url_tree__["g" /* equalSegments */])(a.url, b.url);
+    var /** @type {?} */ parentsMismatch = !a.parent !== !b.parent;
+    return equalUrlParams && !parentsMismatch &&
+        (!a.parent || equalParamsAndUrlSegments(a.parent, b.parent));
 }
 //# sourceMappingURL=router_state.js.map
 
@@ -20294,10 +20297,11 @@ var PreActivation = (function () {
             var /** @type {?} */ guard = _this.getToken(c, curr);
             var /** @type {?} */ observable;
             if (guard.canDeactivate) {
-                observable = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_22__utils_collection__["b" /* wrapIntoObservable */])(guard.canDeactivate(component, curr, _this.curr));
+                observable =
+                    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_22__utils_collection__["b" /* wrapIntoObservable */])(guard.canDeactivate(component, curr, _this.curr, _this.future));
             }
             else {
-                observable = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_22__utils_collection__["b" /* wrapIntoObservable */])(guard(component, curr, _this.curr));
+                observable = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_22__utils_collection__["b" /* wrapIntoObservable */])(guard(component, curr, _this.curr, _this.future));
             }
             return __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_first__["first"].call(observable);
         });
@@ -37546,11 +37550,17 @@ var RouterLink = (function () {
     /**
      * @param {?} router
      * @param {?} route
+     * @param {?} tabIndex
+     * @param {?} renderer
+     * @param {?} el
      */
-    function RouterLink(router, route) {
+    function RouterLink(router, route, tabIndex, renderer, el) {
         this.router = router;
         this.route = route;
         this.commands = [];
+        if (tabIndex == null) {
+            renderer.setElementAttribute(el.nativeElement, 'tabindex', '0');
+        }
     }
     Object.defineProperty(RouterLink.prototype, "routerLink", {
         /**
@@ -37602,6 +37612,9 @@ var RouterLink = (function () {
     RouterLink.ctorParameters = function () { return [
         { type: __WEBPACK_IMPORTED_MODULE_2__router__["a" /* Router */], },
         { type: __WEBPACK_IMPORTED_MODULE_3__router_state__["a" /* ActivatedRoute */], },
+        { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* Attribute */], args: ['tabindex',] },] },
+        { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["M" /* Renderer */], },
+        { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["L" /* ElementRef */], },
     ]; };
     RouterLink.propDecorators = {
         'queryParams': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["F" /* Input */] },],
@@ -73482,7 +73495,7 @@ function getResolve(route) {
 /**
  * @stable
  */
-var /** @type {?} */ VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* Version */]('3.4.3');
+var /** @type {?} */ VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* Version */]('4.0.0-beta.3');
 //# sourceMappingURL=version.js.map
 
 /***/ },
